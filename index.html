@@ -1,181 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sree Satyanarayan Enterprise</title>
-
-<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0a0a0a;
-    color: white;
-}
-
-header {
-    background: black;
-    padding: 15px;
-    text-align: center;
-    border-bottom: 2px solid gold;
-}
-
-header img {
-    width: 90px;
-}
-
-header h1 {
-    color: gold;
-    margin: 5px 0;
-}
-
-nav a {
-    color: white;
-    margin: 10px;
-    text-decoration: none;
-}
-
-.hero {
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-    url('https://images.unsplash.com/photo-1509042239860-f550ce710b93');
-    background-size: cover;
-    padding: 140px 20px;
-    text-align: center;
-}
-
-.hero h2 {
-    color: gold;
-    font-size: 42px;
-}
-
-.section {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.card {
-    background: #111;
-    margin: 15px;
-    padding: 20px;
-    border-radius: 10px;
-    display: inline-block;
-    width: 260px;
-    border: 1px solid gold;
-}
-
-.card img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.clients img {
-    width: 120px;
-    margin: 20px;
-    background: white;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25D366;
-    color: white;
-    padding: 15px 20px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer {
-    background: black;
-    padding: 20px;
-    text-align: center;
-    border-top: 2px solid gold;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SREE SATYANARAYAN ENTERPRISE</title>
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+    header {
+      background: url('https://via.placeholder.com/1600x600') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: gold;
+    }
+    header h1 {
+      font-size: 3em;
+      animation: glow 2s infinite alternate;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 10px gold; }
+      to { text-shadow: 0 0 30px gold; }
+    }
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .section h2 {
+      color: gold;
+      margin-bottom: 20px;
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .card {
+      background: #111;
+      border: 1px solid gold;
+      border-radius: 10px;
+      width: 250px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .card p {
+      padding: 15px;
+    }
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 20px;
+      color: #aaa;
+    }
+    footer a {
+      color: gold;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+  </style>
 </head>
-
 <body>
 
-<header>
-    <img src="logo.png">
-    <h1>SREE SATYANARAYAN ENTERPRISE</h1>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#clients">Clients</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
+  <!-- Hero Section -->
+  <header>
+    <h1 data-aos="fade-down">SREE SATYANARAYAN ENTERPRISE</h1>
+    <p data-aos="fade-up">Where Great Taste Meets Great Work!</p>
+    <button data-aos="zoom-in" style="padding:10px 20px; background:gold; border:none; border-radius:5px; cursor:pointer;">
+      Explore Menu
+    </button>
+  </header>
 
-<div class="hero">
-    <h2>Premium Office Café Solutions</h2>
-    <p>Tea • Coffee • Snacks • Juices for Corporate Offices</p>
-</div>
+  <!-- About Us -->
+  <section class="section" id="about">
+    <h2 data-aos="fade-right">About Us</h2>
+    <p data-aos="fade-left">We transform workplaces into vibrant hubs of taste, energy, and creativity. Our mission is to bring world flavors to your office while keeping you energized and motivated.</p>
+    <img src="https://via.placeholder.com/800x400" alt="About Us" data-aos="zoom-in">
+  </section>
 
-<div id="about" class="section">
-    <h2 style="color:gold;">About Us</h2>
-    <p>
-    Welcome to SREE SATYANARAYAN ENTERPRISE, your go-to destination for a delightful culinary experience in the workplace.
-    We specialize in providing high-quality beverages and snacks that keep employees energized and productive.
-    </p>
-</div>
-
-<div id="services" class="section">
-    <h2 style="color:gold;">Our Services</h2>
-
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348">
-        <h3>Tea & Coffee</h3>
+  <!-- Menu -->
+  <section class="section" id="menu">
+    <h2 data-aos="fade-right">Our Menu</h2>
+    <div class="cards">
+      <div class="card" data-aos="flip-left">
+        <img src="https://via.placeholder.com/250x150" alt="Tea & Coffee">
+        <p>Premium Tea & Coffee blends to energize your day.</p>
+      </div>
+      <div class="card" data-aos="flip-left">
+        <img src="https://via.placeholder.com/250x150" alt="Snacks">
+        <p>Healthy bites and indulgent treats for every craving.</p>
+      </div>
+      <div class="card" data-aos="flip-left">
+        <img src="https://via.placeholder.com/250x150" alt="Juices & Smoothies">
+        <p>Freshly squeezed juices and nutrient-packed smoothies.</p>
+      </div>
+      <div class="card" data-aos="flip-left">
+        <img src="https://via.placeholder.com/250x150" alt="Cuisine">
+        <p>Diverse dishes inspired by global culinary traditions.</p>
+      </div>
     </div>
+  </section>
 
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836">
-        <h3>Snacks</h3>
-    </div>
+  <!-- Services -->
+  <section class="section" id="services">
+    <h2 data-aos="fade-right">Our Services</h2>
+    <p data-aos="fade-left">From office café setups to catering services, we provide customizable menus and vibrant spaces that inspire collaboration and productivity.</p>
+    <img src="https://via.placeholder.com/800x400" alt="Services" data-aos="zoom-in">
+  </section>
 
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1553530666-ba11a90b1e44">
-        <h3>Juices</h3>
-    </div>
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <h2 data-aos="fade-right">Contact Us</h2>
+    <p data-aos="fade-left">Get in touch for inquiries, partnerships, or catering services.</p>
+    <form data-aos="zoom-in" style="max-width:400px; margin:auto; display:flex; flex-direction:column; gap:10px;">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit" style="padding:10px; background:gold; border:none; border-radius:5px; cursor:pointer;">Send</button>
+    </form>
+  </section>
 
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d">
-        <h3>Office Catering</h3>
-    </div>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 SREE SATYANARAYAN ENTERPRISE</p>
+    <a href="#about">About</a> | <a href="#menu">Menu</a> | <a href="#services">Services</a> | <a href="#contact">Contact</a>
+  </footer>
 
-</div>
-
-<div id="clients" class="section">
-    <h2 style="color:gold;">Our Clients</h2>
-    <p>We are currently serving leading corporate offices</p>
-
-    <div class="clients">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/ITC_Limited_Logo.svg">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Tata_Consultancy_Services_Logo.svg">
-    </div>
-
-    <p><strong>ITC Green Centre | IBM | TCS</strong></p>
-</div>
-
-<div id="contact" class="section">
-    <h2 style="color:gold;">Contact Us</h2>
-    <p>📍 New Town, Kolkata</p>
-    <p>📞 8420374267</p>
-    <p>📧 prabhatmaity320@gmail.com</p>
-</div>
-
-<a class="whatsapp" href="https://wa.me/918420374267" target="_blank">
-    Order on WhatsApp
-</a>
-
-<footer>
-    <p>© 2026 Sree Satyanarayan Enterprise</p>
-</footer>
-
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
 </body>
 </html>
