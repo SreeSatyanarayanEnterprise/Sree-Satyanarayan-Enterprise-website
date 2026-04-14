@@ -14,7 +14,7 @@
       color: #fff;
     }
     header {
-      background: url('https://via.placeholder.com/1600x600') no-repeat center center/cover;
+      background: url("https://via.placeholder.com/1600x600") no-repeat center center/cover;
       height: 100vh;
       display: flex;
       flex-direction: column;
@@ -23,6 +23,12 @@
       text-align: center;
       color: gold;
     }
+    header img {
+      width: 200px;
+      height: auto;
+      margin-bottom: 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
     header h1 {
       font-size: 3em;
       animation: glow 2s infinite alternate;
@@ -30,6 +36,10 @@
     @keyframes glow {
       from { text-shadow: 0 0 10px gold; }
       to { text-shadow: 0 0 30px gold; }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1); }
     }
     .section {
       padding: 60px 20px;
@@ -59,7 +69,8 @@
     .card img {
       width: 100%;
       height: 150px;
-      object-fit: cover;
+      object-fit: contain;
+      background: #fff;
     }
     .card p {
       padding: 15px;
@@ -81,6 +92,7 @@
 
   <!-- Hero Section -->
   <header>
+    <img src="/attachments/zp1rAqBR3C1AEd8EbNZgb.jpeg" alt="Company Logo" data-aos="zoom-in">
     <h1 data-aos="fade-down">SREE SATYANARAYAN ENTERPRISE</h1>
     <p data-aos="fade-up">Where Great Taste Meets Great Work!</p>
     <button data-aos="zoom-in" style="padding:10px 20px; background:gold; border:none; border-radius:5px; cursor:pointer;">
@@ -91,8 +103,12 @@
   <!-- About Us -->
   <section class="section" id="about">
     <h2 data-aos="fade-right">About Us</h2>
-    <p data-aos="fade-left">We transform workplaces into vibrant hubs of taste, energy, and creativity. Our mission is to bring world flavors to your office while keeping you energized and motivated.</p>
-    <img src="https://via.placeholder.com/800x400" alt="About Us" data-aos="zoom-in">
+    <p data-aos="fade-left">
+      We are an office café and juice & ice cream parlor company, proudly serving leading enterprises such as <strong>ITC</strong> and <strong>IBM</strong>. 
+      Our mission is to energize workplaces with taste, creativity, and collaboration. 
+      With a growing footprint, we are expanding to serve <strong>TCS</strong> and preparing for exciting upcoming projects with <strong>Cognizant, PwC, Infosys, and Wipro</strong>.
+    </p>
+    <img src="https://via.placeholder.com/800x400" alt="Office Cafe Interior" data-aos="zoom-in">
   </section>
 
   <!-- Menu -->
@@ -112,6 +128,10 @@
         <p>Freshly squeezed juices and nutrient-packed smoothies.</p>
       </div>
       <div class="card" data-aos="flip-left">
+        <img src="https://via.placeholder.com/250x150" alt="Ice Cream Parlor">
+        <p>Delicious ice creams served in a vibrant parlor setting.</p>
+      </div>
+      <div class="card" data-aos="flip-left">
         <img src="https://via.placeholder.com/250x150" alt="Cuisine">
         <p>Diverse dishes inspired by global culinary traditions.</p>
       </div>
@@ -122,7 +142,44 @@
   <section class="section" id="services">
     <h2 data-aos="fade-right">Our Services</h2>
     <p data-aos="fade-left">From office café setups to catering services, we provide customizable menus and vibrant spaces that inspire collaboration and productivity.</p>
-    <img src="https://via.placeholder.com/800x400" alt="Services" data-aos="zoom-in">
+    <img src="https://via.placeholder.com/800x400" alt="Corporate Catering Setup" data-aos="zoom-in">
+  </section>
+
+  <!-- Sustainability -->
+  <section class="section" id="sustainability">
+    <h2 data-aos="fade-right">Sustainability</h2>
+    <p data-aos="fade-left">We use eco-friendly packaging and source local produce to reduce our environmental footprint.</p>
+    <img src="https://via.placeholder.com/800x400" alt="Eco-Friendly Packaging" data-aos="zoom-in">
+  </section>
+
+  <!-- Digital Partners -->
+  <section class="section" id="partners">
+    <h2 data-aos="fade-right">Our Digital Ordering Partners</h2>
+    <p data-aos="fade-left">
+      To make food ordering seamless and efficient, we’ve partnered with leading digital platforms 
+      <strong>HungerBOX</strong> and <strong>Gokhana</strong>. 
+      These collaborations ensure that our customers enjoy quick, reliable, and app-based ordering experiences.
+    </p>
+    <div class="cards">
+      <div class="card" data-aos="flip-up">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/HungerBox_logo.png" alt="HungerBOX Logo">
+        <p>HungerBOX – Workplace food ordering made easy.</p>
+      </div>
+      <div class="card" data-aos="flip-up">
+        <img src="https://gokhana.com/wp-content/uploads/2021/05/gokhana-logo.png" alt="Gokhana Logo">
+        <p>Gokhana – Smart cafeteria management and digital ordering.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Upcoming Projects -->
+  <section class="section" id="projects">
+    <h2 data-aos="fade-right">Our Current & Upcoming Projects</h2>
+    <p data-aos="fade-left">
+      Currently, we are delivering services to <strong>ITC</strong> and <strong>IBM</strong>, while expanding our reach to <strong>TCS</strong>. 
+      Looking ahead, we are excited to collaborate with <strong>Cognizant, PwC, Infosys, and Wipro</strong>, bringing our café and parlor experiences to more workplaces.
+    </p>
+    <img src="https://via.placeholder.com/800x400" alt="Corporate Partnerships" data-aos="zoom-in">
   </section>
 
   <!-- Contact -->
@@ -139,17 +196,4 @@
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2026 SREE SATYANARAYAN ENTERPRISE</p>
-    <a href="#about">About</a> | <a href="#menu">Menu</a> | <a href="#services">Services</a> | <a href="#contact">Contact</a>
-  </footer>
-
-  <!-- AOS Script -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 1000,
-      once: true
-    });
-  </script>
-</body>
-</html>
+    <img src="/attachments/zp
