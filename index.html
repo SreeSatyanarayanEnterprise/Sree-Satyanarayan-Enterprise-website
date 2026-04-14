@@ -1,193 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SREE SATYANARAYAN ENTERPRISE</title>
-  <!-- AOS Animation Library -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #000;
-      color: #fff;
-    }
-    header {
-      background: url("https://via.placeholder.com/1600x600") no-repeat center center/cover;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: gold;
-    }
-    header img {
-      width: 220px;
-      height: auto;
-      margin-bottom: 20px;
-      animation: fadeIn 2s ease-in-out;
-    }
-    header h1 {
-      font-size: 3em;
-      animation: glow 2s infinite alternate;
-    }
-    @keyframes glow {
-      from { text-shadow: 0 0 10px gold; }
-      to { text-shadow: 0 0 30px gold; }
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: scale(0.8); }
-      to { opacity: 1; transform: scale(1); }
-    }
-    .section {
-      padding: 60px 20px;
-      text-align: center;
-    }
-    .section h2 {
-      color: gold;
-      margin-bottom: 20px;
-    }
-    .cards {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-    .card {
-      background: #111;
-      border: 1px solid gold;
-      border-radius: 10px;
-      width: 250px;
-      overflow: hidden;
-      transition: transform 0.3s;
-    }
-    .card:hover {
-      transform: scale(1.05);
-    }
-    .card img {
-      width: 100%;
-      height: 150px;
-      object-fit: contain;
-      background: #fff;
-    }
-    .card p {
-      padding: 15px;
-    }
-    footer {
-      background: #111;
-      text-align: center;
-      padding: 20px;
-      color: #aaa;
-    }
-    footer a {
-      color: gold;
-      margin: 0 10px;
-      text-decoration: none;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SREE SATYANARAYAN ENTERPRISE</title>
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+header {
+  background: url("https://images.unsplash.com/photo-1509042239860-f550ce710b93") center/cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: gold;
+  text-align: center;
+}
+
+header img {
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 3em;
+  text-shadow: 0 0 20px gold;
+}
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  color: gold;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: #111;
+  border: 1px solid gold;
+  border-radius: 10px;
+  width: 250px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card p {
+  padding: 15px;
+}
+
+footer {
+  background: #111;
+  padding: 20px;
+  text-align: center;
+}
+</style>
 </head>
+
 <body>
 
-  <!-- Hero Section -->
-  <header>
-    <img src="/attachments/zp1rAqBR3C1AEd8EbNZgb.jpeg" alt="Company Logo" data-aos="zoom-in">
-    <h1 data-aos="fade-down">SREE SATYANARAYAN ENTERPRISE</h1>
-    <p data-aos="fade-up">Where Great Taste Meets Great Work!</p>
-    <button data-aos="zoom-in" style="padding:10px 20px; background:gold; border:none; border-radius:5px; cursor:pointer;">
+<header>
+  <img src="logo.png" alt="Logo" data-aos="zoom-in">
+  <h1 data-aos="fade-down">SREE SATYANARAYAN ENTERPRISE</h1>
+  <p data-aos="fade-up">Where Great Taste Meets Great Work!</p>
+
+  <a href="#menu">
+    <button style="padding:10px 20px; background:gold; border:none; border-radius:5px;">
       Explore Menu
     </button>
-  </header>
+  </a>
+</header>
 
-  <!-- About Us -->
-  <section class="section" id="about">
-    <h2 data-aos="fade-right">About Us</h2>
-    <p data-aos="fade-left">
-      We are an office café and juice & ice cream parlor company, proudly serving leading enterprises such as <strong>ITC</strong> and <strong>IBM</strong>. 
-      Our mission is to energize workplaces with taste, creativity, and collaboration. 
-      With a growing footprint, we are expanding to serve <strong>TCS</strong> and preparing for exciting upcoming projects with <strong>Cognizant, PwC, Infosys, and Wipro</strong>.
-    </p>
-    <img src="https://via.placeholder.com/800x400" alt="Office Cafe Interior" data-aos="zoom-in">
-  </section>
+<section class="section" id="about">
+  <h2 data-aos="fade-right">About Us</h2>
+  <p data-aos="fade-left">
+    We are an office café and juice & snack company serving corporate offices like ITC Green Centre, IBM, and TCS.
+    Our mission is to energize workplaces with quality food and beverages.
+  </p>
+</section>
 
-  <!-- Menu -->
-  <section class="section" id="menu">
-    <h2 data-aos="fade-right">Our Menu</h2>
-    <div class="cards">
-      <div class="card" data-aos="flip-left">
-        <img src="https://via.placeholder.com/250x150" alt="Tea & Coffee">
-        <p>Premium Tea & Coffee blends to energize your day.</p>
-      </div>
-      <div class="card" data-aos="flip-left">
-        <img src="https://via.placeholder.com/250x150" alt="Snacks">
-        <p>Healthy bites and indulgent treats for every craving.</p>
-      </div>
-      <div class="card" data-aos="flip-left">
-        <img src="https://via.placeholder.com/250x150" alt="Juices & Smoothies">
-        <p>Freshly squeezed juices and nutrient-packed smoothies.</p>
-      </div>
-      <div class="card" data-aos="flip-left">
-        <img src="https://via.placeholder.com/250x150" alt="Ice Cream Parlor">
-        <p>Delicious ice creams served in a vibrant parlor setting.</p>
-      </div>
-      <div class="card" data-aos="flip-left">
-        <img src="https://via.placeholder.com/250x150" alt="Cuisine">
-        <p>Diverse dishes inspired by global culinary traditions.</p>
-      </div>
+<section class="section" id="menu">
+  <h2>Our Menu</h2>
+
+  <div class="cards">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348">
+      <p>Premium Tea & Coffee</p>
     </div>
-  </section>
 
-  <!-- Services -->
-  <section class="section" id="services">
-    <h2 data-aos="fade-right">Our Services</h2>
-    <p data-aos="fade-left">From office café setups to catering services, we provide customizable menus and vibrant spaces that inspire collaboration and productivity.</p>
-    <img src="https://via.placeholder.com/800x400" alt="Corporate Catering Setup" data-aos="zoom-in">
-  </section>
-
-  <!-- Sustainability -->
-  <section class="section" id="sustainability">
-    <h2 data-aos="fade-right">Sustainability</h2>
-    <p data-aos="fade-left">We use eco-friendly packaging and source local produce to reduce our environmental footprint.</p>
-    <img src="https://via.placeholder.com/800x400" alt="Eco-Friendly Packaging" data-aos="zoom-in">
-  </section>
-
-  <!-- Digital Partners -->
-  <section class="section" id="partners">
-    <h2 data-aos="fade-right">Our Digital Ordering Partners</h2>
-    <p data-aos="fade-left">
-      To make food ordering seamless and efficient, we’ve partnered with leading digital platforms 
-      <strong>HungerBOX</strong> and <strong>Gokhana</strong>. 
-      These collaborations ensure that our customers enjoy quick, reliable, and app-based ordering experiences.
-    </p>
-    <div class="cards">
-      <div class="card" data-aos="flip-up">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/HungerBox_logo.png" alt="HungerBOX Logo">
-        <p>HungerBOX – Workplace food ordering made easy.</p>
-      </div>
-      <div class="card" data-aos="flip-up">
-        <img src="https://gokhana.com/wp-content/uploads/2021/05/gokhana-logo.png" alt="Gokhana Logo">
-        <p>Gokhana – Smart cafeteria management and digital ordering.</p>
-      </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836">
+      <p>Snacks & Fast Food</p>
     </div>
-  </section>
 
-  <!-- Upcoming Projects -->
-  <section class="section" id="projects">
-    <h2 data-aos="fade-right">Our Current & Upcoming Projects</h2>
-    <p data-aos="fade-left">
-      Currently, we are delivering services to <strong>ITC</strong> and <strong>IBM</strong>, while expanding our reach to <strong>TCS</strong>. 
-      Looking ahead, we are excited to collaborate with <strong>Cognizant, PwC, Infosys, and Wipro</strong>, bringing our café and parlor experiences to more workplaces.
-    </p>
-    <img src="https://via.placeholder.com/800x400" alt="Corporate Partnerships" data-aos="zoom-in">
-  </section>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1553530666-ba11a90b1e44">
+      <p>Fresh Juices</p>
+    </div>
 
-  <!-- Contact -->
-  <section class="section" id="contact">
-    <h2 data-aos="fade-right">Contact Us</h2>
-    <p data-aos="fade-left">Get in touch for inquiries, partnerships, or catering services.</p>
-    <form data-aos="zoom-in" style="max-width:400px; margin:auto; display:flex; flex-direction:column; gap:10px;">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" rows="4" required></textarea>
-      <button type="submit" style="padding:10px; background:gold
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1561047029-3000c68339ca">
+      <p>Healthy Options</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Our Clients</h2>
+  <p>Currently serving ITC Green Centre, IBM & TCS</p>
+</section>
+
+<section class="section" id="contact">
+  <h2>Contact</h2>
+  <p>📍 New Town, Kolkata</p>
+  <p>📞 8420374267</p>
+  <p>📧 prabhatmaity320@gmail.com</p>
+</section>
+
+<footer>
+  <p>© 2026 SREE SATYANARAYAN ENTERPRISE</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
+
+</body>
+</html>
